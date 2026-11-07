@@ -1,30 +1,23 @@
-# SAYA — The New Market Edit
+# IKRA ASHION HUB — নিউ মার্কেট হিজাব ও খিমার ডেমো
 
-A mobile-first client presentation for a hijab boutique in Dhaka New Market. SAYA is editable sample branding. Prices, stock, descriptions, customer records and policies are illustrative. The nine unique client-supplied photos are embedded in `index.html`; one duplicate upload was omitted.
+ঢাকা নিউ মার্কেটের একটি হিজাব ও খিমারের দোকানের জন্য বাংলা ভাষায় তৈরি মোবাইল-প্রথম প্রেজেন্টেশন ডেমো। দোকানের নাম ব্যবহারকারীর দেওয়া বানান অনুসারে রাখা হয়েছে এবং ব্যবহারকারীর দেওয়া লোগো ব্যবহার করা হয়েছে।
 
-## One-file demo
+## একটি HTML ফাইলে
 
-Open `index.html` in a modern browser or use the GitHub Pages deployment. No build, dependencies, CDN, external fonts or image server are required. Images, CSS, JavaScript and seed data are all included in the file (about 4.4 MB).
+`index.html`-এ HTML, CSS, JavaScript, ডেমো তথ্য, ১৭টি ভিন্ন পণ্যের ছবি, দেওয়া লোগো এবং দুটি বাংলা ফন্ট অন্তর্ভুক্ত আছে। আগের ও নতুন ছবির ব্যাচে দুটি ছবি একাধিকবার ছিল; প্রতিটি ভিন্ন ছবি একবার রাখা হয়েছে। ফাইলটি চালাতে আলাদা ছবির ফোল্ডার, CDN, ফন্ট সার্ভার বা বিল্ড প্রয়োজন নেই।
 
-## Client walkthrough
+## ডেমো ব্যবহার
 
-1. Browse, search or filter the collection, save favourites, and choose a size and quantity.
-2. Add items to the bag and continue to checkout. Use **Fill sample details** and the discount code **SAYA10**. Choose Dhaka/outside Dhaka delivery, express delivery in Dhaka, or free shop collection. Cash on delivery, bKash and Nagad are demo preferences; no money is collected.
-3. Use **Owner demo** to manage products, add a photo, edit prices and stock, archive/restore listings, or update shop details and delivery rates.
-4. Open the new order in **Orders**. Confirm, pack, assign a sample courier and tracking reference, then mark it shipped or delivered. Customer tracking reflects the updates. Cancelling an unfinished order restores its stock.
-5. Send a customer message, reply in **Owner demo → Inbox**, and return to the storefront to view the reply.
-6. Export orders to CSV, download a receipt or data snapshot, or restore the original presentation in **Settings → Reset to the original demo**.
+1. পণ্য দেখুন, বাংলা নামে সার্চ করুন, ক্যাটাগরি বেছে নিন ও পছন্দের পণ্য সেভ করুন।
+2. পণ্য ব্যাগে যোগ করে চেকআউটে **নমুনা তথ্য দিন** চাপুন। নমুনা ডিসকাউন্ট কোড **IKRA10**। ফোন নম্বর বাংলা বা ইংরেজি অঙ্কে দেওয়া যায়।
+3. **অ্যাডমিন ডেমো** থেকে পণ্য, মূল্য, স্টক, অর্ডার, ডেলিভারি, মেসেজ ও দোকানের তথ্য পরিচালনা করুন।
+4. অর্ডার নিশ্চিত করে, প্যাক করে, নমুনা কুরিয়ার ও ট্র্যাকিং নম্বর যোগ করে পাঠানো দেখান। ক্রেতার ট্র্যাকিংয়ে ডেমো আপডেট দেখা যাবে।
+5. ক্রেতা হিসেবে মেসেজ দিন, অ্যাডমিন ইনবক্সে উত্তর লিখুন, এবং ক্রেতার চ্যাটে উত্তর দেখুন। সেটিংস থেকে CSV বা ডেমো তথ্য ডাউনলোড ও ডেমো রিসেট করা যায়।
 
-Sample tracking: **SAYA-1042**, phone **01700000042** (fictional demo record).
+নমুনা ট্র্যাকিং নম্বর: **IKRA-1042**; ডেমো ফোন নম্বর: **01700000042**। পুরোনো ডেমোতে ব্রাউজারে সংরক্ষিত অর্ডার ও অন্যান্য তথ্য নতুন সংস্করণে রাখা হয়।
 
-## Limits
+## সীমাবদ্ধতা
 
-All mutable data is saved in localStorage in the current browser. It is not shared with another device or visitor. The owner panel is intentionally open for presentation; it is not authentication. No real orders, payment transactions, external messages or courier bookings are submitted. Do not use the demo for live commerce or real customer data.
+সব তথ্য ব্যবহারকারীর বর্তমান ব্রাউজারে থাকে; অন্য ডিভাইস বা ক্রেতার সঙ্গে ভাগ হয় না। এটি উন্মুক্ত প্রেজেন্টেশন ডেমো—নিরাপদ অ্যাডমিন লগইন বা বাস্তব পেমেন্ট, বাইরের মেসেজিং কিংবা কুরিয়ার সংযোগ নেই। পণ্যমূল্য, স্টক, ক্রেতার তথ্য ও নীতিমালা নমুনা হিসেবে দেওয়া। প্রকৃত ব্যবসার আগে নিরাপদ সার্ভার, ডেটাবেস ও প্রয়োজনীয় সেবা সংযুক্ত করতে হবে।
 
-A production shop requires a secured backend, owner authentication, shared database, verified business information and policies, and payment, messaging and courier integrations.
-
-## Validation
-
-The mobile walkthrough was checked in the browser: checkout and discount calculation, stock decrement, owner fulfilment updates, customer tracking, two-way demo messages, product creation/editing/archive/restore and refresh persistence. Additional logic checks cover shipping thresholds, express charges, cancellation/restock, overselling and invalid-size prevention, HTML escaping and CSV formula handling.
-
-Client-supplied product photographs are included for the requested demonstration. No general reuse licence is granted for these images.
+বাংলা হরফের জন্য ব্যবহার করা Noto Sans Bengali ও Noto Serif Bengali ফন্টের লাইসেন্স ও কপিরাইট নোটিশ HTML ফাইলের শুরুতে রয়েছে।
